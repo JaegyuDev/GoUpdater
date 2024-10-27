@@ -1,0 +1,13 @@
+[Unit]
+Description=Minecraft Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/mnt/c/Users/jayde/GolandProjects/updater/test-server/main
+WorkingDirectory=/mnt/c/Users/jayde/GolandProjects/updater/test-server
+User=ubuntu
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

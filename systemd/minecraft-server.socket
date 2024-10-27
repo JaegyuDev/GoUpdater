@@ -1,0 +1,10 @@
+[Unit]
+Description=Minecraft Server Control Socket
+
+[Socket]
+ListenStream=/tmp/minecraft_server.sock
+SocketMode=0660
+Service=minecraft-server.service
+
+[Install]
+WantedBy=sockets.target
